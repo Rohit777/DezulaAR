@@ -323,7 +323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7772daf9bd80eba408fc90bf1fcd8404, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c1608a6b8759b04d887521d809ab8d9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -833,6 +833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756875359}
   - component: {fileID: 756875360}
+  - component: {fileID: 756875361}
   m_Layer: 0
   m_Name: spawnObject
   m_TagString: Untagged
@@ -861,7 +862,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756875358}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
   m_Name: 
@@ -873,10 +874,37 @@ MonoBehaviour:
     RequiredMouseButtons: 0
     RequiredSelectable: {fileID: 0}
   Camera: {fileID: 0}
-  Relative: 0
+  Relative: 1
   Sensitivity: 1
   Dampening: -1
   remainingScale: {x: 0, y: 0, z: 0}
+--- !u!114 &756875361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756875358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c6d14fa31c67d46bbc2dca62205bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  IgnoreGuiFingers: 0
+  RequiredFingerCount: 0
+  RequiredSelectable: {fileID: 0}
+  WheelSensitivity: 0
+  Camera: {fileID: 0}
+  Relative: 0
+  ScaleClamp: 1
+  ScaleMin: {x: 0.3, y: 0.3, z: 0.3}
+  ScaleMax: {x: 3, y: 3, z: 3}
 --- !u!1 &790401401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b07c064cdcd7f1c4f9a909d68c7a6573, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd38020ed1cb20645ae824667e541f22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
